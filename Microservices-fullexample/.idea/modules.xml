@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../API-GATEWAY/API-GATEWAY.iml" filepath="$PROJECT_DIR$/../API-GATEWAY/API-GATEWAY.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../user-service/department-service.iml" filepath="$PROJECT_DIR$/../user-service/department-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../department-service/department-service (1).iml" filepath="$PROJECT_DIR$/../department-service/department-service (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/../service-registry/service-registry.iml" filepath="$PROJECT_DIR$/../service-registry/service-registry.iml" />
+    </modules>
+  </component>
+</project>

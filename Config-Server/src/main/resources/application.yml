@@ -1,0 +1,37 @@
+server:
+  port: 9296
+
+
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/yasmina1415/Configurations
+#          clone-on-start: true
+
+          password: Soso20101095
+          default-label: master
+#          search-paths:
+#            - properties
+
+
+
+
+#  cloud:
+#    config:
+#      server:
+#        encrypt:
+#          enabled: false
+#        git:
+#          uri: https://github.com/yasmina1415/spring-configserver-tutorial-pluralsight
+#          search-paths:
+#            - station*
+#          repos:
+#            perf:
+#              pattern: '*/perf'
+#              uri: https://github.com/yasmina1415/spring-configserver-tutorial-pluralsight-perf
+#              search-paths:
+#                - statiion*

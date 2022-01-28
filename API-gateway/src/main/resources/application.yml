@@ -1,0 +1,46 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: GATEWAY-MS
+    #routing configuration
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:9595
+    gateway:
+      routes:
+        - id: USER-MS
+          uri: lb://USER-MS
+          predicates:
+            - Path=/users/**
+#          filters:
+#            - name: CircuitBreaker
+#              args:
+#                name: USER-MS
+#                fallbeackuri: forward:/userServiceFallBack
+        - id: DEPARTMENT-MS
+          uri: lb://DEPARTMENT-MS
+          predicates:
+            - Path=/departments/**
+#          filters:
+#            - name: CircuitBreaker
+#              args:
+#                name: DEPARTMENT-MS
+#                fallbeackuri: forward:/departmentServiceFallBack
+
+#hystrix:
+#  command:
+#    fallbackcmd:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 4000
+#
+#management:
+#  endpoint:
+#    web:
+#      exposure:
+#        include: hystrix.stream
+

@@ -1,0 +1,10 @@
+server:
+  port: 9011
+
+
+spring:
+  application:
+    name: USER-MS
+
+
+
